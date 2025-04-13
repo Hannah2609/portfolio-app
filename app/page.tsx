@@ -10,7 +10,7 @@ export default function Home() {
         <main className="flex flex-col row-start-2 justify-center sm:items-start min-h-screen p-8 pb-20 gap-16 sm:px-20">
           <div>
             <h1 className="text-2xl">Hannah Isabel Grenade</h1>
-            <Button>Get in touch</Button>
+            <Button variant={"hoverEffect"}>Get in touch</Button>
           </div>
         </main>
         <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center  p-8 pb-20 sm:px-20">

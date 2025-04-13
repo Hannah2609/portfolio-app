@@ -38,8 +38,8 @@ export default function RootLayout({
         >
           <MaskCursor
             color="#ffffff"
-            size={30}
-            easing={0.1}
+            size={15}
+            easing={0.12}
             exclusionMode={true}
           />
           {children}

@@ -10,8 +10,8 @@ interface MaskCursorProps {
 
 const MaskCursor: React.FC<MaskCursorProps> = ({
   color = "#ffffff",
-  size = 80,
-  easing = 0.2,
+  size = 15,
+  easing = 0.12,
   exclusionMode = true,
 }) => {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -89,16 +89,17 @@ const MaskCursor: React.FC<MaskCursorProps> = ({
   return (
     <div
       ref={cursorRef}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        pointerEvents: "none",
-        zIndex: 9999,
-        borderRadius: "50%",
-        transform: "translate3d(0, 0, 0)",
-        willChange: "transform",
-      }}
+      className={`fixed top-0 left-0 pointer-events-none z-[9999] rounded-full bg-white will-change-transform`}
+      //   style={{
+      //     position: "fixed",
+      //     top: 0,
+      //     left: 0,
+      //     pointerEvents: "none",
+      //     zIndex: 9999,
+      //     borderRadius: "50%",
+      //     transform: "translate3d(0, 0, 0)",
+      //     willChange: "transform",
+      //   }}
     />
   );
 };
