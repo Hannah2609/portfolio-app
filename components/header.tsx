@@ -7,7 +7,10 @@ return (
     <div>
       <h2 className="text-2xl">Hannah Isabel</h2>
       <h2 className="text-2xl leading-0 -mt-4">
-        Grenade <span className="text-7xl leading-0">.</span>
+        Grenade{" "}
+        <span className="text-7xl leading-0 dark:text-zinc-700 text-zinc-300">
+          .
+        </span>
       </h2>
     </div>
     <ModeToggle />

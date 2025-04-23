@@ -12,11 +12,11 @@ const buttonVariants = cva(
         default:
           "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         hoverEffect:
-          "bg-primary text-primary-foreground border-2 border-primary dark:border-primary shadow-xs hover:bg-transparent hover:border-2 dark:hover:border-white dark:hover:text-white hover:border-black hover:text-black",
+          "bg-primary text-primary-foreground hover:cursor-pointer border-2 border-primary dark:border-primary shadow-xs hover:bg-transparent hover:border-2 dark:hover:border-white dark:hover:text-white hover:border-black hover:text-black",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
-          "bg-transparrent text-primary-background dark:border-white shadow-xs hover:bg-transparent hover:border-2 dark:hover:border-white dark:hover:text-white hover:border-black hover:text-black",
+          "bg-transparrent text-primary-background hover:cursor-pointer dark:border-white shadow-xs hover:bg-transparent hover:border-2 dark:hover:border-white dark:hover:text-white hover:border-black hover:text-black",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost:
