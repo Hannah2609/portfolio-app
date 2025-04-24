@@ -11,8 +11,9 @@ export default function Home() {
       <div className="font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col row-start-2 justify-center sm:items-start p-8 pb-20 gap-16 sm:px-20">
           <section className="sm:w-2/3">
-            <TextReveal className="text-6xl">
-              Hii 🙋🏽‍♀️ Passionate frontend developer with a love for design and
+            <TextReveal>
+              Hii 🙋🏽‍♀️ 
+              Passionate frontend developer with a love for design and
               cool code
             </TextReveal>
           </section>
