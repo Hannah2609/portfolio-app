@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
+// TODO: remove maskcursor when mobile+tablet - from md, lg?
+
 interface MaskCursorProps {
   color?: string;
   size?: number;
@@ -73,33 +75,10 @@ const MaskCursor: React.FC<MaskCursorProps> = ({
     };
   }, [size, color, easing, exclusionMode]);
 
-  // Check if user prefers reduced motion
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-    const cursor = cursorRef.current;
-
-    if (prefersReducedMotion && cursor) {
-      // Disable smooth animation for reduced motion preference
-      cursor.style.transition = "none";
-    }
-  }, []);
-
   return (
     <div
       ref={cursorRef}
       className={`fixed top-0 left-0 pointer-events-none z-[9999] rounded-full bg-white will-change-transform`}
-      //   style={{
-      //     position: "fixed",
-      //     top: 0,
-      //     left: 0,
-      //     pointerEvents: "none",
-      //     zIndex: 9999,
-      //     borderRadius: "50%",
-      //     transform: "translate3d(0, 0, 0)",
-      //     willChange: "transform",
-      //   }}
     />
   );
 };

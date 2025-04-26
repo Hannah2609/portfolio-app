@@ -17,7 +17,7 @@ interface PillProps {
 
 const Pill: React.FC<PillProps> = ({ label }) => {
   return (
-    <div className="px-4 py-2 rounded-full dark:bg-zinc-900 bg-zinc-100 dark:text-white text-black font-medium text-sm">
+    <div className="px-4 py-2 rounded-full dark:bg-zinc-900 bg-zinc-200 dark:text-zinc-300 text-zinc-700 font-medium text-sm">
       {label}
     </div>
   );
@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <AnimatedDiv>
       <article className="overflow-hidden mb-20">
-        <div className="relative w-full aspect-[16/12] group overflow-hidden rounded-sm">
+        <div className="relative w-full aspect-[16/12] group overflow-hidden rounded-sm card-hover-target">
           <Link href={href} target="none">
             <Image
               src={imageSrc}

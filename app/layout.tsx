@@ -37,10 +37,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <MaskCursor
-            color="#ffffff"
-            size={15}
-            easing={0.12}
-            exclusionMode={true}
           />
           {children}
         </ThemeProvider>
