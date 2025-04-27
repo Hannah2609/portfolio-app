@@ -5,11 +5,9 @@ import AnimatedDiv from './animatedDiv';
 
 function Projects() {
   return (
-    <section className='mb-20'>
+    <section className="mb-20" id="projects">
       <AnimatedDiv>
-        <h2 className="text-5xl md:text-7xl mb-30">
-          Projects
-        </h2>
+        <h2 className="text-5xl md:text-7xl mb-30">Projects</h2>
       </AnimatedDiv>
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-20 my-10">
@@ -22,7 +20,7 @@ function Projects() {
         />
         <Card
           href="https://katjakrogh.pythonanywhere.com/"
-          imageSrc="/volt.png"
+          imageSrc="/voltmockup.png"
           title="Volt"
           description="Group exam project for 1st semester Web Development. A Wolt-inspired food delivery app.
                         Log in: signup or use admin@fulldemo.com / password: password"
