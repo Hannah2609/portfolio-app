@@ -1,61 +1,51 @@
-import React from 'react'
-import { Button } from './ui/button';
-import Image from 'next/image';
-import AnimatedDiv from './animatedDiv';
+"use client"
+
+// import React, { useEffect, useState } from "react";
+import { Button } from "./ui/button";
+// import Image from "next/image";
+import AnimatedDiv from "./animatedDiv";
+import Links from "./links";
+import Link from "next/link";
+// import { useTheme } from "next-themes";
 
 function Footer() {
+//   const { resolvedTheme } = useTheme();
+//   const [imageSrc, setImageSrc] = useState("/billede.png");
+
+//   useEffect(() => {
+//     setImageSrc(resolvedTheme === "dark" ? "/billede2.png" : "/billede.png");
+//   }, [resolvedTheme]);
+
   return (
-    <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center  p-8 pb-20 sm:px-20">
-      <AnimatedDiv>
-        <Button variant={"hoverEffect"}>Get in touch</Button>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </AnimatedDiv>
-    </footer>
+    <AnimatedDiv>
+      <footer className="flex flex-col items-center justify-center">
+        {/* <Image
+          aria-hidden
+          src={imageSrc}
+          alt="Profile image"
+          width={160}
+          height={160}
+        /> */}
+        <h3 className="text-4xl mb-10">Get in touch</h3>
+        <div className="gap-4 flex flex-row mt-6 mb-4">
+          {/* <Button variant={"hoverEffect"} asChild>
+            <Link href="mailto:deterhannahs@gmail.com" aria-label="Email">
+              Send email
+            </Link>
+          </Button> */}
+          <Button variant={"hoverEffect"} asChild>
+            <Link href={"/resume.pdf"} download aria-label="download resume">
+              Get resume
+            </Link>
+          </Button>
+        </div>
+        <Links />
+        <p className="text-sm text-gray-500 mt-30 mb-10">
+          © {new Date().getFullYear()} Hannah Isabel Grenade.
+        </p>
+      </footer>
+    </AnimatedDiv>
   );
 }
 
-export default Footer
+export default Footer;

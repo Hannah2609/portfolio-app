@@ -1,13 +1,13 @@
 "use client"
 import React from 'react'
-import Card from './ui/card'
+import Card from './card'
 import AnimatedDiv from './animatedDiv';
 
 function Projects() {
   return (
-    <section>
+    <section className='mb-20'>
       <AnimatedDiv>
-        <h2 className="text-7xl mb-20">
+        <h2 className="text-5xl md:text-7xl mb-30">
           Projects
         </h2>
       </AnimatedDiv>
