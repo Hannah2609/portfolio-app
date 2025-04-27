@@ -16,7 +16,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[var(--bagground)]/80 dark:bg-[var(--bagground)]/40 backdrop-blur-md transition-all duration-300">
-      <div className={`${ scrolled ? "p-4" : "p-8" } flex flex-row w-full justify-between gap-16 sm:px-20`}>
+      <div
+        className={`${
+          scrolled ? "p-4" : "p-8"
+        } flex flex-row w-full justify-between gap-16 sm:px-20`}
+      >
         <div>
           <h2
             className={`${

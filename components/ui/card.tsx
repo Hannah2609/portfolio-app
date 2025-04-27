@@ -44,8 +44,8 @@ const Card: React.FC<CardProps> = ({
           </Link>
         </div>
         <div className="py-4">
-          <h2 className="text-2xl mb-4">{title}</h2>
-          <p className="text-base md:text-md lg:text-lg mb-6">{description}</p>
+          <h3 className="text-4xl mb-4">{title}</h3>
+          <p className="text-base md:text-md lg:text-lg mb-6 text-zinc-700 dark:text-zinc-400">{description}</p>
           <div className="flex flex-wrap gap-2">
             {pills.map((pillText, index) => (
               <Pill key={index} label={pillText} />
