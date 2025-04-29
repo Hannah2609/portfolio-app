@@ -5,12 +5,12 @@ import AnimatedDiv from './animatedDiv';
 
 function Projects() {
   return (
-    <section className="mb-20" id="projects">
+    <section className="mb-10 md:mb-20" id="projects">
       <AnimatedDiv>
         <h2 className="text-5xl md:text-7xl mb-30">Projects</h2>
       </AnimatedDiv>
 
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-20 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-20 my-10">
         <Card
           href="https://miawillaume.dk/"
           imageSrc="/mia.png"
