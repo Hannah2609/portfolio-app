@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <AnimatedDiv>
-      <article className="overflow-hidden mb-20 md:mb-30">
+      <article className="overflow-hidden mb-16 md:mb-30">
         <div className="relative w-full aspect-[16/12] group overflow-hidden card-hover-target">
           <Link href={href} target="none">
             <Image

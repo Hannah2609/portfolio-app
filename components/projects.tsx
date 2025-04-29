@@ -49,6 +49,13 @@ function Projects() {
         />
         <Card
           href="https://gruppe14omada.netlify.app/"
+          imageSrc="/foofest.png"
+          title="FooFest"
+          description="Exam project for frontend course. Developed a website that integrat"
+          pills={["Astro", "Content", "Redesign", "Figma"]}
+        />
+        <Card
+          href="https://gruppe14omada.netlify.app/"
           imageSrc="/omada.png"
           title="Omada Wine & Deli"
           description="Website redesign and content strategy for Omada Wine & Deli. Created during Multimedia Design studies at KEA, including a full pitch and client presentation."

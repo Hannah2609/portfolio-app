@@ -94,7 +94,7 @@ const MaskCursor: React.FC<MaskCursorProps> = ({
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 pointer-events-none z-[9999] will-change-transform flex items-center justify-center"
+      className="fixed top-0 left-0 pointer-events-none z-[9999] will-change-transform hidden md:flex items-center justify-center"
       style={{
         height: hoveringCard ? 140 : size,
         width: hoveringCard ? 140 : size,
