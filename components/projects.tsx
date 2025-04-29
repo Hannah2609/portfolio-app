@@ -48,18 +48,11 @@ function Projects() {
           ]}
         />
         <Card
-          href="https://gruppe14omada.netlify.app/"
+          href="https://foo-festival.vercel.app/"
           imageSrc="/foofest.png"
           title="FooFest"
-          description="Exam project for frontend course. Developed a website that integrat"
-          pills={["Astro", "Content", "Redesign", "Figma"]}
-        />
-        <Card
-          href="https://gruppe14omada.netlify.app/"
-          imageSrc="/omada.png"
-          title="Omada Wine & Deli"
-          description="Website redesign and content strategy for Omada Wine & Deli. Created during Multimedia Design studies at KEA, including a full pitch and client presentation."
-          pills={["Astro", "Content", "Redesign", "Figma"]}
+          description="Developed a responsive event website as a final frontend project, featuring API integration and a booking flow."
+          pills={["Next.js", "API", "Bookingflow"]}
         />
       </div>
 
@@ -72,11 +65,11 @@ function Projects() {
           pills={["Javascript", "LocalStorage", "Mini-project"]}
         />
         <Card
-          href="https://tommisburgerjoint.netlify.app/"
-          imageSrc="/tommis.png"
-          title="Tommi's Burger Joint"
-          description="2nd semester exam project. Website redesign and content creation for Tommi’s Burger Joint."
-          pills={["Astro", "Redesign", "Content", "Figma"]}
+          href="https://gruppe14omada.netlify.app/"
+          imageSrc="/omada.png"
+          title="Omada Wine & Deli"
+          description="Website redesign and content strategy for Omada Wine & Deli. Created during Multimedia Design studies at KEA, including a full pitch and client presentation."
+          pills={["Astro", "Content", "Redesign", "Figma"]}
         />
       </div>
     </section>
